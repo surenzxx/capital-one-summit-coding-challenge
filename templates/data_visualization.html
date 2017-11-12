@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1>Data Visualization </h1>
+	{% if graph %}
+		<div style="width:600;height:500">
+	{{ graph|safe }}
+		</div>
+	{% endif %}
+{% endblock %}
